@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-pip install matplotlib
+!pip install matplotlib
 import matplotlib.pyplot as plt
 
 # Function to load and preprocess the data
