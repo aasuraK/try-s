@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-!pip install matplotlib
-import matplotlib.pyplot as plt
+#pip install matplotlib
 
+import matplotlib.pyplot as plt
 # Function to load and preprocess the data
 @st.cache_data
 def load_data():
@@ -42,7 +42,7 @@ center_summary.index += 1  # Adjusting the index to start from 1
 
 st.subheader(f"Summary of Sales by Center for {selected_month_year}")
 st.write(center_summary)
-
+'''
 # Custom y-axis formatter
 def custom_formatter(x, _):
     if x >= 1e7:  # Crores
@@ -72,4 +72,4 @@ ax.yaxis.set_major_formatter(plt.FuncFormatter(custom_formatter))
 plt.ylabel('Sales (Exc. Tax)')
 plt.title(f"Monthly Sales for the year {selected_year}")
 st.pyplot(plt.gcf())
-plt.clf()
+plt.clf()'''
